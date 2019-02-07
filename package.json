@@ -1,0 +1,25 @@
+{
+  "name": "coverbands-backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "tsc": "tsc"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/kazinov/coverbands-backend.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/kazinov/coverbands-backend/issues"
+  },
+  "homepage": "https://github.com/kazinov/coverbands-backend#readme",
+  "dependencies": {
+    "@types/node": "^10.12.21",
+    "express": "^4.16.4",
+    "typescript": "^3.3.1"
+  }
+}

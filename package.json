@@ -5,7 +5,10 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "tsc": "tsc"
+    "tsc": "tsc",
+    "rsync": "rsync",
+    "ts-node": "npx ts-node --ignore=false",
+    "rsync-prod": "yarn ts-node ./tools/rsync --env prod"
   },
   "repository": {
     "type": "git",
@@ -18,8 +21,17 @@
   },
   "homepage": "https://github.com/kazinov/coverbands-backend#readme",
   "dependencies": {
-    "@types/node": "^10.12.21",
     "express": "^4.16.4",
-    "typescript": "^3.3.1"
+    "lodash-es": "^4.17.11"
+  },
+  "devDependencies": {
+    "@types/lodash-es": "^4.17.1",
+    "@types/node": "^10.12.24",
+    "env-variable": "0.0.5",
+    "lodash": "^4.17.11",
+    "rsync": "^0.6.1",
+    "ts-node": "^8.0.2",
+    "typescript": "^3.3.3",
+    "yargs": "^12.0.5"
   }
 }

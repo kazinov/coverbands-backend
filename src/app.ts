@@ -1,22 +1,8 @@
 import * as express from 'express'
+import { configureBandsRouting } from './bands/bands-routing';
 
-class App {
-  public express;
+const router = express.Router();
+configureBandsRouting(router);
 
-  constructor () {
-    this.express = express();
-    this.mountRoutes();
-  }
-
-  private mountRoutes (): void {
-    const router = express.Router();
-    router.get('/', (req, res) => {
-      res.json({
-        message: 'Hello World!'
-      })
-    });
-    this.express.use('/', router);
-  }
-}
-
-export default new App().express
+export const app = express();
+app.use('/', router);

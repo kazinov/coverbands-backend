@@ -1,7 +1,8 @@
-import { app } from './app';
+import { app } from './api/app';
 
-const port = process.env.PORT || 3000
+const port = process.env.PORT || 3000;
 
+console.error('env', process.env.NODE_ENV)
 app.listen(port, (err) => {
   if (err) {
     return console.log(err)

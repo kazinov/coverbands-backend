@@ -49,3 +49,4 @@ ALTER ROLE developer CREATEDB;
 ## knex
 https://knexjs.org/
 http://perkframework.com/v1/guides/database-migrations-knex.html
+http://frontend.turing.io/lessons/module-4/knex-postgres.html
